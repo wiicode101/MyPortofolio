@@ -1,13 +1,10 @@
 #GUI "HALLO, Nama"
-#side : TOP(default), BOTTOM, LEFT, RIGHT
 from tkinter import *
 def on_button_click():
     label_out.config(text="Halo, " + entry.get())
-
 app = Tk()
 app.geometry("300x100")
 app.title("GUI Sederhana")
-
 label = Label(app, text="Masukkan nama:")
 label.pack()
 entry = Entry(app)
